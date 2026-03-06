@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Federant&family=Tangerine:wght@400;700&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="image/frutas.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Sinfonía De Sabores Fruit</title>
+</head>
+<body>
+
+    <header class="header">
+        <h1>SinfoníaDeSaboresFruit</h1>
+
+        <div class="header-right">
+            <nav class="nav" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="#Inicio" class="link">Inicio</a></li>
+                    <li><a href="#Galeria" class="link">Galería</a></li>
+                    <li><a href="#Productos" class="link">Productos</a></li>
+                    <li><a href="#WhatsApp" class="link">WhatsApp</a></li>
+                    <li><a href="#Contacto" class="link">Contacto</a></li>
+                    <li><a href="#Sobre-Sinfonia" class="link">Nosotros</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="form.html#Domicilio" target="_blank" rel="noopener noreferrer">
+                    <button type="button" class="btn-pedidos">Pedidos</button>
+                </a>
+                <button class="hamburger" id="btnMenu" type="button" aria-label="Abrir menú" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <ul class="mobile-ul">
+            <li><a href="#Inicio" class="mobile-link">Inicio</a></li>
+            <li><a href="#Galeria" class="mobile-link">Galería</a></li>
+            <li><a href="#Productos" class="mobile-link">Productos</a></li>
+            <li><a href="#WhatsApp" class="mobile-link">WhatsApp</a></li>
+            <li><a href="#Contacto" class="mobile-link">Contacto</a></li>
+            <li><a href="#Sobre-Sinfonia" class="mobile-link">Nosotros</a></li>
+        </ul>
+    </div>
+
+    <a href="https://wa.me/573128900286" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chatear por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+    <section id="Inicio" class="hero">
+        <div class="hero-content">
+            <p class="hero-eyebrow">Sinfonía De Sabores Fruit 🍃</p>
+            <h1 class="hero-titulo">
+                100% fruta,<br>
+                <span class="hero-titulo-accent">100% amor</span>
+            </h1>
+            <p class="hero-descripcion">
+                Cremas y helados artesanales elaborados con frutas naturales,<br>
+                sin colorantes ni sabores artificiales. Puro sabor, pura vida.
+            </p>
+            <div class="hero-btns">
+                <a href="#Productos" class="hero-btn-primary">
+                    <i class="fa-solid fa-chevron-down"></i> Ver más
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-scroll-hint" aria-hidden="true">
+            <i class="fa-solid fa-angles-down"></i>
+        </div>
+    </section>
+
+    <section id="Productos">
+        <div class="container-padre">
+            <h2 class="reveal">Productos</h2>
+            <div class="container-hijo">
+
+                <div class="card reveal">
+                    <img src="img/WhatsApp Image 2026-03-05 at 7.18.18 PM.jpeg" alt="Crema de Arequipe">
+                    <button class="btn-comprar" type="button" data-producto="Arequipe">Comprar</button>
+                </div>
+
+                <div class="card reveal">
+                    <img src="image/coco.jpeg" alt="Crema de Coco">
+                    <button class="btn-comprar" type="button" data-producto="Coco">Comprar</button>
+                </div>
+
+                <div class="card reveal">
+                    <img src="image/fresa.jpeg" alt="Crema de Fresa">
+                    <button class="btn-comprar" type="button" data-producto="Fresa">Comprar</button>
+                </div>
+
+                <div class="card reveal">
+                    <img src="image/guanabana.jpeg" alt="Crema de Guanábana">
+                    <button class="btn-comprar" type="button" data-producto="Guanabana">Comprar</button>
+                </div>
+
+                <div class="card reveal">
+                    <img src="image/lulo.jpeg" alt="Crema de Lulo">
+                    <button class="btn-comprar" type="button" data-producto="Lulo">Comprar</button>
+                </div>
+
+                <div class="card reveal">
+                    <img src="image/mangoBiche.jpeg" alt="Crema de Mango Biche">
+                    <button class="btn-comprar" type="button" data-producto="MangoBiche">Comprar</button>
+                </div>
+
+                <div class="card reveal">
+                    <img src="image/maracumango.jpeg" alt="Crema de Maracumango">
+                    <button class="btn-comprar" type="button" data-producto="MaraCumango">Comprar</button>
+                </div>
+
+                <div class="card reveal">
+                    <img src="image/maracuya.jpeg" alt="Crema de Maracuyá">
+                    <button class="btn-comprar" type="button" data-producto="Maracuya">Comprar</button>
+                </div>
+
+                <div class="card reveal">
+                    <img src="image/Queso.jpeg" alt="Crema de Queso">
+                    <button class="btn-comprar" type="button" data-producto="Queso">Comprar</button>
+                </div>
+
+                <div class="card reveal">
+                    <img src="image/salpicon.jpeg" alt="Crema de Salpicón">
+                    <button class="btn-comprar" type="button" data-producto="Salpicon">Comprar</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="Galeria">
+        <div class="container-padre">
+            <h2 class="reveal">Galería</h2>
+            <div class="galeria-grid">
+
+                <div class="galeria-item reveal" data-index="0">
+                    <img src="image/arequipe.jpeg" alt="Arequipe">
+                    <div class="galeria-overlay"><span>Arequipe</span></div>
+                </div>
+
+                <div class="galeria-item reveal" data-index="1">
+                    <img src="image/coco.jpeg" alt="Coco">
+                    <div class="galeria-overlay"><span>Coco</span></div>
+                </div>
+
+                <div class="galeria-item reveal" data-index="2">
+                    <img src="image/fresa.jpeg" alt="Fresa">
+                    <div class="galeria-overlay"><span>Fresa</span></div>
+                </div>
+
+                <div class="galeria-item reveal" data-index="3">
+                    <img src="image/guanabana.jpeg" alt="Guanábana">
+                    <div class="galeria-overlay"><span>Guanábana</span></div>
+                </div>
+
+                <div class="galeria-item reveal" data-index="4">
+                    <img src="image/lulo.jpeg" alt="Lulo">
+                    <div class="galeria-overlay"><span>Lulo</span></div>
+                </div>
+
+                <div class="galeria-item reveal" data-index="5">
+                    <img src="image/mangoBiche.jpeg" alt="Mango Biche">
+                    <div class="galeria-overlay"><span>Mango Biche</span></div>
+                </div>
+
+                <div class="galeria-item reveal" data-index="6">
+                    <img src="image/maracumango.jpeg" alt="Maracumango">
+                    <div class="galeria-overlay"><span>Maracumango</span></div>
+                </div>
+
+                <div class="galeria-item reveal" data-index="7">
+                    <img src="image/maracuya.jpeg" alt="Maracuyá">
+                    <div class="galeria-overlay"><span>Maracuyá</span></div>
+                </div>
+
+                <div class="galeria-item reveal" data-index="8">
+                    <img src="image/Queso.jpeg" alt="Queso">
+                    <div class="galeria-overlay"><span>Queso</span></div>
+                </div>
+
+                <div class="galeria-item reveal" data-index="9">
+                    <img src="image/salpicon.jpeg" alt="Salpicón">
+                    <div class="galeria-overlay"><span>Salpicón</span></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="lightbox" id="lightbox" aria-hidden="true">
+            <button class="lightbox-cerrar" id="lightboxCerrar" aria-label="Cerrar">&times;</button>
+            <button class="lightbox-btn lightbox-prev" id="lightboxPrev" aria-label="Anterior">&#8249;</button>
+            <div class="lightbox-contenido">
+                <img src="" alt="" id="lightboxImg">
+                <p class="lightbox-nombre" id="lightboxNombre"></p>
+            </div>
+            <button class="lightbox-btn lightbox-next" id="lightboxNext" aria-label="Siguiente">&#8250;</button>
+        </div>
+    </section>
+
+    <section id="WhatsApp">
+        <div class="container-padre">
+            <h2 class="reveal">Pedir por WhatsApp</h2>
+            <p class="whatsapp-texto reveal">¿Listo para pedir? Escríbenos directamente.</p>
+            <a href="https://wa.me/573128900286" target="_blank" rel="noopener noreferrer" class="btn-whatsapp reveal scale-up">
+                <i class="fa-brands fa-whatsapp"></i> Pedir ahora
+            </a>
+        </div>
+    </section>
+    <button id="btnAbrir" type="button">🍉 Ver Mensaje</button>
+
+    <div id="miModal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+        <div class="modal-box">
+            <button class="cerrar" id="btnCerrar" type="button" aria-label="Cerrar modal">&times;</button>
+            <img src="image/mensaje.jpeg" alt="Sinfonía de Sabores Fruit — mensaje especial">
+            <div class="modal-texto">
+                <h3 id="modalTitulo">🌿 Sinfonía de Sabores Fruit</h3>
+                <p>Próximamente nuestro <strong>punto de ventas</strong>.<br>¡Sabores únicos que enamoran!</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="Sobre-Sinfonia">
+        <div class="nosotros-wrapper">
+
+            <div class="nosotros-header reveal">
+                <h2 class="nosotros-titulo">Sinfonía De Sabores Fruit</h2>
+                <p class="nosotros-subtitulo">Conoce quiénes somos, hacia dónde vamos y qué nos mueve cada día</p>
+                <div class="nosotros-divider"></div>
+            </div>
+
+            <div class="nosotros-bloque reveal from-left">
+                <div class="nosotros-texto">
+                    <h3>Quiénes Somos</h3>
+                    <p>En <strong>Sinfonía De Sabores Fruit</strong> elaboramos cremas y helados caseros
+                    100% de frutas naturales, sin colorantes ni sabores artificiales.
+                    Cada producto nace del amor por los sabores auténticos y el deseo de llevar
+                    lo mejor de la fruta directamente a tu paladar.</p>
+                </div>
+                <div class="nosotros-icono">
+                    <div class="icono-circulo">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nosotros-bloque reverse reveal from-right">
+                <div class="nosotros-icono">
+                    <div class="icono-circulo">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                </div>
+                <div class="nosotros-texto">
+                    <h3>Nuestra Misión</h3>
+                    <p>Ofrecer productos frutales de la más alta calidad, elaborados con ingredientes
+                    naturales y procesos artesanales. Queremos que cada cucharada sea una experiencia
+                    memorable, saludable y llena de sabor genuino para cada uno de nuestros clientes.</p>
+                </div>
+            </div>
+
+            <div class="nosotros-bloque reveal from-left">
+                <div class="nosotros-texto">
+                    <h3>Nuestra Visión</h3>
+                    <p>Ser reconocidos como la marca líder en cremas y helados artesanales de frutas
+                    en nuestra región, expandiendo nuestros sabores únicos a más hogares y consolidando
+                    un punto de venta propio que sea sinónimo de frescura, calidad y tradición.</p>
+                </div>
+                <div class="nosotros-icono">
+                    <div class="icono-circulo">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nosotros-bloque reverse reveal from-right">
+                <div class="nosotros-icono">
+                    <div class="icono-circulo">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="nosotros-texto">
+                    <h3>Nuestros Valores</h3>
+                    <p>Nos guían la <strong>naturalidad</strong>, la <strong>honestidad</strong> y el
+                    <strong>amor por lo artesanal</strong>. Creemos en productos sin atajos,
+                    en el trato cercano con nuestros clientes y en el orgullo de ofrecer
+                    siempre lo mejor de cada fruta en cada producto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Por-Que-Elegirnos">
+    <div class="container-padre">
+        <h2 class="reveal">¿Por qué elegirnos?</h2>
+        <div class="elegirnos-grid reveal">
+            <div class="elegirnos-card">
+                <div class="elegirnos-icono">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                <h3>100% Natural</h3>
+                <p>Sin colorantes ni sabores artificiales. Solo fruta real en cada producto.</p>
+            </div>
+            <div class="elegirnos-card">
+                <div class="elegirnos-icono">
+                    <i class="fa-solid fa-hands"></i>
+                </div>
+                <h3>Hecho a mano</h3>
+                <p>Elaboración artesanal con amor y dedicación en cada cucharada.</p>
+            </div>
+            <div class="elegirnos-card">
+                <div class="elegirnos-icono">
+                    <i class="fa-solid fa-motorcycle"></i>
+                </div>
+                <h3>Domicilio</h3>
+                <p>Te llevamos nuestros sabores directamente a la puerta de tu casa.</p>
+            </div>
+            <div class="elegirnos-card">
+                <div class="elegirnos-icono">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+                <h3>Calidad garantizada</h3>
+                <p>Con registro INVIMA y el respaldo de cientos de clientes satisfechos.</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer>
+        <section id="Contacto" aria-label="Redes sociales y contacto">
+            <div class="redes">
+                <a href="https://www.instagram.com/sinfoniadesaboresfruit?igsh=MWtiMGF0dndlY2p5dw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Sinfonía de Sabores Fruit">
+                    <i class="fa-brands fa-instagram instagram"></i>
+                </a>
+                <a href="https://wa.me/573128900286" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de Sinfonía de Sabores Fruit">
+                    <i class="fa-brands fa-whatsapp whatsapp"></i>
+                </a>
+            </div>
+        </section>
+
+        <p><i class="fa-solid fa-copyright"></i> Sinfonía De Sabores Fruit</p>
+        <p>Productos con registro Sanitario INVIMA n.° RSA-0621-2026 · RSA-06219-2026</p>
+        <address>Cra 56 #56-06 — El Tablazo</address>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

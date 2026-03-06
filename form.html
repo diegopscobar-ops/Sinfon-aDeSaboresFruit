@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Federant&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="form.css">
+    <title>Hacer Pedido — SinfoníaDeSaboresFruit</title>
+</head>
+<body>
+
+<div class="page-wrapper">
+
+    <div class="step" id="step-1">
+        <div class="step-card">
+            <div class="step-header">
+                <span class="step-badge">01</span>
+                <div>
+                    <h2>Tu Pedido</h2>
+                    <p class="step-sub">Escoge tus cremas favoritas</p>
+                </div>
+            </div>
+
+            <div class="cremas-grid">
+                <div class="crema-item" data-crema="Arequipe">
+                    <div class="crema-emoji">🍮</div>
+                    <span class="crema-name">Arequipe</span>
+                    <div class="crema-counter">
+                        <button class="counter-btn minus" onclick="cambiarCantidad(this, -1)">−</button>
+                        <span class="counter-val">0</span>
+                        <button class="counter-btn plus" onclick="cambiarCantidad(this, 1)">+</button>
+                    </div>
+                </div>
+                <div class="crema-item" data-crema="Coco">
+                    <div class="crema-emoji">🥥</div>
+                    <span class="crema-name">Coco</span>
+                    <div class="crema-counter">
+                        <button class="counter-btn minus" onclick="cambiarCantidad(this, -1)">−</button>
+                        <span class="counter-val">0</span>
+                        <button class="counter-btn plus" onclick="cambiarCantidad(this, 1)">+</button>
+                    </div>
+                </div>
+                <div class="crema-item" data-crema="Fresa">
+                    <div class="crema-emoji">🍓</div>
+                    <span class="crema-name">Fresa</span>
+                    <div class="crema-counter">
+                        <button class="counter-btn minus" onclick="cambiarCantidad(this, -1)">−</button>
+                        <span class="counter-val">0</span>
+                        <button class="counter-btn plus" onclick="cambiarCantidad(this, 1)">+</button>
+                    </div>
+                </div>
+                <div class="crema-item" data-crema="Guanabana">
+                    <div class="crema-emoji">🌿</div>
+                    <span class="crema-name">Guanábana</span>
+                    <div class="crema-counter">
+                        <button class="counter-btn minus" onclick="cambiarCantidad(this, -1)">−</button>
+                        <span class="counter-val">0</span>
+                        <button class="counter-btn plus" onclick="cambiarCantidad(this, 1)">+</button>
+                    </div>
+                </div>
+                <div class="crema-item" data-crema="Lulo">
+                    <div class="crema-emoji">🍊</div>
+                    <span class="crema-name">Lulo</span>
+                    <div class="crema-counter">
+                        <button class="counter-btn minus" onclick="cambiarCantidad(this, -1)">−</button>
+                        <span class="counter-val">0</span>
+                        <button class="counter-btn plus" onclick="cambiarCantidad(this, 1)">+</button>
+                    </div>
+                </div>
+                <div class="crema-item" data-crema="MangoBiche">
+                    <div class="crema-emoji">🥭</div>
+                    <span class="crema-name">Mango Biche</span>
+                    <div class="crema-counter">
+                        <button class="counter-btn minus" onclick="cambiarCantidad(this, -1)">−</button>
+                        <span class="counter-val">0</span>
+                        <button class="counter-btn plus" onclick="cambiarCantidad(this, 1)">+</button>
+                    </div>
+                </div>
+                <div class="crema-item" data-crema="MaraCumango">
+                    <div class="crema-emoji">✨</div>
+                    <span class="crema-name">MaraCumango</span>
+                    <div class="crema-counter">
+                        <button class="counter-btn minus" onclick="cambiarCantidad(this, -1)">−</button>
+                        <span class="counter-val">0</span>
+                        <button class="counter-btn plus" onclick="cambiarCantidad(this, 1)">+</button>
+                    </div>
+                </div>
+                <div class="crema-item" data-crema="Maracuya">
+                    <div class="crema-emoji">💛</div>
+                    <span class="crema-name">Maracuyá</span>
+                    <div class="crema-counter">
+                        <button class="counter-btn minus" onclick="cambiarCantidad(this, -1)">−</button>
+                        <span class="counter-val">0</span>
+                        <button class="counter-btn plus" onclick="cambiarCantidad(this, 1)">+</button>
+                    </div>
+                </div>
+                <div class="crema-item" data-crema="Queso">
+                    <div class="crema-emoji">🧀</div>
+                    <span class="crema-name">Queso</span>
+                    <div class="crema-counter">
+                        <button class="counter-btn minus" onclick="cambiarCantidad(this, -1)">−</button>
+                        <span class="counter-val">0</span>
+                        <button class="counter-btn plus" onclick="cambiarCantidad(this, 1)">+</button>
+                    </div>
+                </div>
+                <div class="crema-item" data-crema="Salpicon">
+                    <div class="crema-emoji">🍹</div>
+                    <span class="crema-name">Salpicón</span>
+                    <div class="crema-counter">
+                        <button class="counter-btn minus" onclick="cambiarCantidad(this, -1)">−</button>
+                        <span class="counter-val">0</span>
+                        <button class="counter-btn plus" onclick="cambiarCantidad(this, 1)">+</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="resumen-bar" id="resumen-bar">
+                <span id="resumen-texto">🛒 Nada seleccionado aún</span>
+                <button class="btn-siguiente" onclick="irPaso2()">Continuar →</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="step hidden" id="step-2">
+        <div class="step-card">
+            <button class="btn-back" onclick="irPaso1()">← Volver</button>
+
+            <div class="step-header">
+                <span class="step-badge">02</span>
+                <div>
+                    <h2>Datos de Entrega</h2>
+                    <p class="step-sub">¿Dónde te llevamos tu pedido?</p>
+                </div>
+            </div>
+
+            <div class="pedido-resumen" id="pedido-resumen-display"></div>
+
+            <form id="form-pedido" onsubmit="enviarPedido(event)">
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="nombre" placeholder="Nombre y Apellidos" required>
+                </div>
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="correo" placeholder="Correo electrónico" required>
+                </div>
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="tel" id="telefono" placeholder="Teléfono / WhatsApp" required>
+                </div>
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-map-marker-alt"></i>
+                    <input type="text" id="direccion" placeholder="Dirección de entrega" required>
+                </div>
+
+                <div class="select-group">
+                    <div class="select-box">
+                        <label for="Ciudad">Ciudad</label>
+                        <select id="Ciudad" required>
+                            <option value="">Selecciona...</option>
+                            <option value="medellin">Medellín</option>
+                        </select>
+                    </div>
+                    <div class="select-box">
+                        <label for="Comuna">Comuna</label>
+                        <select id="Comuna">
+                            <option value="poblado">Poblado</option>
+                            <option value="belen">Belén</option>
+                            <option value="laureles">Laureles</option>
+                            <option value="popular">Popular</option>
+                            <option value="santa_cruz">Santa Cruz</option>
+                            <option value="robledo">Robledo</option>
+                            <option value="aranjuez">Aranjuez</option>
+                            <option value="la_america">La América</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-footer">
+                    <a href="#">Términos y condiciones</a>
+                    <button class="btn-enviar" type="submit" id="btn-enviar">
+                        <span id="btn-texto">Enviar Pedido 🚀</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="step hidden" id="step-3">
+        <div class="step-card success-card">
+            <div class="success-icon">🎉</div>
+            <h2>¡Pedido Enviado!</h2>
+            <p id="success-msg">Tu pedido ha sido registrado. Te contactaremos pronto.</p>
+            <button class="btn-enviar" onclick="reiniciar()" style="margin-top:24px">Hacer otro pedido</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="form.js"></script>
+</body>
+</html>
