@@ -106,7 +106,7 @@ html { scroll-behavior: smooth; }
     z-index: -1;
 
     /* Imagen principal — coloca aquí la ruta correcta en tu proyecto */
-    background-image: url('images/brooke-lark-atzWFItRHy8-unsplash.jpg');
+    background-image: ;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -135,7 +135,7 @@ body {
 
     /* Fallback por si #fondo-fijo no aplica */
     background-color: #fce8ef;
-    background-image: url('images/brooke-lark-atzWFItRHy8-unsplash.jpg');
+    background-image: ;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1414,7 +1414,7 @@ footer p, footer address {
     }
 
     body {
-        background-image: url('images/brooke-lark-atzWFItRHy8-unsplash.jpg');
+        background-image: ;
         background-size: 220%;
         background-position: 52% 45%;
         background-attachment: scroll;
