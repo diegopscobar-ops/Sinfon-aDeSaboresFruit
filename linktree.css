@@ -1,0 +1,388 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+
+    html {
+    scroll-behavior: smooth;
+    }
+
+    body {
+    min-height: 100vh;
+    background: #fff5f8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 16px 60px;
+    font-family: 'Merienda', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+    transition: background 0.4s ease, color 0.4s ease;
+    }
+
+    .bg-blobs {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+    }
+
+    .blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(70px);
+    opacity: 0.45;
+    animation: flotar 8s ease-in-out infinite alternate;
+    }
+
+    .blob1 {
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, #ff6eb4, #ff3a7a);
+    top: -100px; left: -100px;
+    animation-duration: 9s;
+    }
+
+    .blob2 {
+    width: 350px; height: 350px;
+    background: radial-gradient(circle, #ffe066, #ffb347);
+    top: 20%; right: -80px;
+    animation-duration: 11s;
+    animation-delay: -3s;
+    }
+
+    .blob3 {
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, #7effa0, #00c96e);
+    bottom: 10%; left: -60px;
+    animation-duration: 13s;
+    animation-delay: -6s;
+    }
+
+    .blob4 {
+    width: 280px; height: 280px;
+    background: radial-gradient(circle, #c084fc, #e040fb);
+    bottom: -80px; right: -60px;
+    animation-duration: 10s;
+    animation-delay: -2s;
+    }
+
+    @keyframes flotar {
+    from { transform: translate(0, 0) scale(1); }
+    to   { transform: translate(30px, 40px) scale(1.1); }
+    }
+
+    .linktree-container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    }
+
+    .profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    animation: entrar 0.7s ease both;
+    }
+
+    .avatar-ring {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(#ff6eb4, #ffb347, #7effa0, #c084fc, #ff6eb4);
+    padding: 4px;
+    animation: girar 6s linear infinite;
+    box-shadow: 0 0 25px rgba(255, 110, 180, 0.5);
+    }
+
+    .avatar-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #fff5f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    transition: background 0.4s ease;
+    }
+
+    @keyframes girar {
+    from { rotate: 0deg; }
+    to   { rotate: 360deg; }
+    }
+
+    .brand-name {
+    font-family: 'Tangerine', cursive;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2d1a2e;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(255, 110, 180, 0.3);
+    line-height: 1.1;
+    transition: color 0.4s ease;
+    }
+
+    .brand-tagline {
+    font-family: 'Merienda', sans-serif;
+    font-size: 0.85rem;
+    color: #6b4c6e;
+    text-align: center;
+    line-height: 1.7;
+    transition: color 0.4s ease;
+    }
+
+    .redes-sociales {
+    display: flex;
+    gap: 20px;
+    animation: entrar 0.7s ease 0.2s both;
+    }
+
+    .red-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #2d1a2e;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 1.5px solid rgba(255,255,255,0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .red-icon:hover {
+    transform: translateY(-4px) scale(1.1);
+    box-shadow: 0 8px 25px rgba(255, 110, 180, 0.4);
+    }
+
+    .red-icon .fa-instagram { color: #c13584; }
+    .red-icon .fa-whatsapp  { color: #25d366; }
+
+    .links-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    }
+
+    .link-btn {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(14px);
+    border: 1.5px solid rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    color: #2d1a2e;
+    font-family: 'Merienda', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    animation: entrar 0.6s ease calc(var(--i) * 0.1s + 0.3s) both;
+    }
+
+    .link-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,110,180,0.12), rgba(255,179,71,0.12));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: inherit;
+    }
+
+    .link-btn:hover::before { opacity: 1; }
+
+    .link-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow:
+        0 8px 30px rgba(255, 110, 180, 0.25),
+        0 0 0 2px rgba(255, 110, 180, 0.3);
+    background: rgba(255, 255, 255, 0.9);
+    }
+
+    .link-btn:active {
+    transform: scale(0.98);
+    }
+
+    .link-whatsapp {
+    border-color: rgba(37, 211, 102, 0.4);
+    }
+
+    .link-whatsapp:hover {
+    box-shadow:
+        0 8px 30px rgba(37, 211, 102, 0.25),
+        0 0 0 2px rgba(37, 211, 102, 0.3);
+    }
+
+    .link-icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    width: 24px;
+    text-align: center;
+    color: #c084d0;
+    transition: color 0.3s ease;
+    }
+
+    .link-whatsapp .link-icon {
+    color: #25d366;
+    }
+
+    .link-btn:hover .link-icon {
+    color: #ff6eb4;
+    }
+
+    .link-whatsapp:hover .link-icon {
+    color: #1ebe5c;
+    }
+
+    .link-text {
+    flex: 1;
+    letter-spacing: 0.01em;
+    }
+
+    .link-arrow {
+    font-size: 0.75rem;
+    color: #c084d0;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    }
+
+    .link-btn:hover .link-arrow {
+    transform: translateX(4px);
+    }
+
+    .linktree-footer {
+    font-family: 'Merienda', sans-serif;
+    font-size: 0.78rem;
+    color: #9a7a9e;
+    text-align: center;
+    line-height: 2;
+    animation: entrar 0.6s ease 0.9s both;
+    transition: color 0.4s ease;
+    }
+
+    @keyframes entrar {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+    }
+
+    #btnDark {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background 0.4s ease;
+    }
+
+    #btnDark:hover {
+    transform: scale(1.1);
+    }
+
+    body.dark {
+    background: #1a0a1e;
+    }
+
+    body.dark .avatar-inner {
+    background: #2d1a2e;
+    }
+
+    body.dark .brand-name,
+    body.dark .brand-tagline,
+    body.dark .linktree-footer {
+    color: #f0e0ff;
+    }
+
+    body.dark .red-icon {
+    background: rgba(255, 255, 255, 0.1);
+    color: #f0e0ff;
+    border-color: rgba(255,255,255,0.2);
+    }
+
+    body.dark .link-btn {
+    background: rgba(255, 255, 255, 0.08);
+    color: #f0e0ff;
+    border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    body.dark .link-btn:hover {
+    background: rgba(255, 255, 255, 0.14);
+    box-shadow:
+        0 8px 30px rgba(255, 110, 180, 0.2),
+        0 0 0 2px rgba(255, 110, 180, 0.25);
+    }
+
+    body.dark .link-whatsapp:hover {
+    box-shadow:
+        0 8px 30px rgba(37, 211, 102, 0.2),
+        0 0 0 2px rgba(37, 211, 102, 0.25);
+    }
+
+    body.dark .link-icon,
+    body.dark .link-arrow {
+    color: #e0aaff;
+    }
+
+    body.dark .link-whatsapp .link-icon {
+    color: #25d366;
+    }
+
+    body.dark #btnDark {
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    }
+
+    @media (max-width: 480px) {
+    body {
+        padding: 30px 12px 50px;
+    }
+
+    .brand-name {
+        font-size: 2.4rem;
+    }
+
+    .avatar-ring {
+        width: 85px;
+        height: 85px;
+    }
+
+    .avatar-inner {
+        font-size: 2.5rem;
+    }
+
+    .link-btn {
+        padding: 14px 16px;
+        font-size: 0.92rem;
+    }
+
+    .link-icon {
+        font-size: 1.05rem;
+    }
+    }

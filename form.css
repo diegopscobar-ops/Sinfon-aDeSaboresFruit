@@ -1,0 +1,390 @@
+:root {
+    --verde: #44dd9e;
+    --verde-dark: #2fb87e;
+    --azul: #4eaffd;
+    --turquesa: #5beefecc;
+    --bg: linear-gradient(135deg, #dff6ff 0%, #e8faf3 60%, #f0fff8 100%);
+    --white: #ffffff;
+    --card-shadow: 0 12px 48px rgba(68, 221, 158, 0.18);
+    --radius: 20px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 16px 60px;
+}
+
+.page-wrapper {
+    width: 100%;
+    max-width: 680px;
+}
+
+.step { animation: fadeIn 0.35s ease; }
+.hidden { display: none !important; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.step-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 32px 28px;
+    box-shadow: var(--card-shadow);
+    position: relative;
+}
+
+.step-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.step-badge {
+    font-family: 'Federant', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--verde);
+    background: rgba(68, 221, 158, 0.1);
+    border-radius: 12px;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.step-header h2 {
+    font-family: 'Federant', sans-serif;
+    font-size: 24px;
+    color: #1a1a2e;
+}
+
+.step-sub {
+    font-size: 13px;
+    color: #999;
+    margin-top: 2px;
+}
+
+.cremas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.crema-item {
+    background: #f8fffe;
+    border: 2px solid #e0f9f0;
+    border-radius: 16px;
+    padding: 14px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+    cursor: default;
+}
+
+.crema-item.activa {
+    border-color: var(--verde);
+    box-shadow: 0 0 0 3px rgba(68, 221, 158, 0.15);
+    transform: translateY(-2px);
+    background: #f0fff8;
+}
+
+.crema-emoji {
+    font-size: 28px;
+    line-height: 1;
+}
+
+.crema-name {
+    font-size: 12px;
+    font-weight: 700;
+    color: #444;
+    text-align: center;
+}
+
+.crema-counter {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.counter-btn {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 2px solid #c8f0e0;
+    background: white;
+    color: var(--verde-dark);
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    transition: background 0.15s, border-color 0.15s;
+    padding: 0;
+}
+
+.counter-btn:hover {
+    background: var(--verde);
+    border-color: var(--verde);
+    color: white;
+}
+
+.counter-val {
+    font-size: 15px;
+    font-weight: 800;
+    color: #333;
+    min-width: 18px;
+    text-align: center;
+}
+
+.resumen-bar {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    border-radius: 14px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+#resumen-texto {
+    font-size: 13px;
+    color: rgba(255,255,255,0.85);
+    flex: 1;
+}
+
+.btn-siguiente {
+    padding: 10px 22px;
+    background: var(--verde);
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    font-family: 'Nunito', sans-serif;
+    white-space: nowrap;
+}
+
+.btn-siguiente:hover {
+    background: var(--verde-dark);
+    transform: translateY(-1px);
+}
+
+.btn-back {
+    background: none;
+    border: none;
+    color: var(--azul);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+}
+
+.btn-back:hover { color: var(--verde-dark); }
+
+.pedido-resumen {
+    background: linear-gradient(135deg, rgba(68,221,158,0.08), rgba(91,238,254,0.08));
+    border: 1.5px solid rgba(68,221,158,0.25);
+    border-radius: 14px;
+    padding: 14px 18px;
+    margin-bottom: 22px;
+    font-size: 13px;
+    color: #444;
+    line-height: 1.8;
+}
+
+.pedido-resumen strong {
+    color: var(--verde-dark);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+
+.input-wrapper {
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.input-wrapper i {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    color: var(--verde);
+    font-size: 15px;
+    pointer-events: none;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 13px 14px 13px 40px;
+    border-radius: 50px;
+    border: 1.5px solid #b2f0dc;
+    background: #f8fffe;
+    color: #333;
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-wrapper input:focus {
+    border-color: var(--verde);
+    box-shadow: 0 0 0 3px rgba(68, 221, 158, 0.15);
+}
+
+.input-wrapper input::placeholder { color: #aaccd8; }
+
+.select-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.select-box { display: flex; flex-direction: column; gap: 5px; }
+
+.select-box label {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--verde-dark);
+    padding-left: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.select-box select {
+    width: 100%;
+    padding: 12px 36px 12px 14px;
+    border-radius: 50px;
+    border: 1.5px solid #b2f0dc;
+    background: #f8fffe;
+    color: var(--azul);
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2344dd9e' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+}
+
+.select-box select:focus {
+    border-color: var(--verde);
+    box-shadow: 0 0 0 3px rgba(68,221,158,0.15);
+}
+
+.form-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.form-footer a {
+    font-size: 13px;
+    color: var(--azul);
+    text-decoration: none;
+}
+
+.form-footer a:hover { color: var(--verde-dark); }
+
+.btn-enviar {
+    padding: 13px 30px;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #5beefe 0%, #44dd9e 100%);
+    box-shadow: 0 4px 18px rgba(68,221,158,0.35);
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.btn-enviar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(68,221,158,0.45);
+}
+
+.btn-enviar:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.success-card {
+    text-align: center;
+    padding: 60px 28px;
+}
+
+.success-icon {
+    font-size: 64px;
+    margin-bottom: 20px;
+    animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+    0%   { transform: scale(0.5); opacity: 0; }
+    70%  { transform: scale(1.15); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.success-card h2 {
+    font-family: 'Federant', sans-serif;
+    font-size: 28px;
+    color: #1a1a2e;
+    margin-bottom: 10px;
+}
+
+.success-card p {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+@media (max-width: 500px) {
+    .step-card { padding: 24px 18px; }
+
+    .cremas-grid { grid-template-columns: repeat(2, 1fr); }
+
+    .select-group { grid-template-columns: 1fr; }
+
+    .form-footer { flex-direction: column; align-items: stretch; text-align: center; }
+
+    .btn-enviar { width: 100%; }
+
+    .resumen-bar { flex-direction: column; align-items: stretch; text-align: center; }
+
+    .btn-siguiente { width: 100%; }
+}
