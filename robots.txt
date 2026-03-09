@@ -1,0 +1,12 @@
+# robots.txt - Sinfonía De Sabores Fruit
+# https://sinfoniadesaboresfruit.com/
+
+User-agent: *
+Allow: /
+
+# Bloquear archivos innecesarios para indexar
+Disallow: /form.html
+Disallow: /images/mensaje.jpeg
+
+# Sitemap
+Sitemap: https://sinfoniadesaboresfruit.com/sitemap.xml

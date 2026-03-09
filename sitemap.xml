@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Página principal -->
+  <url>
+    <loc>https://sinfonia-de-sabores-fruit.vercel.app/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://sinfonia-de-sabores-fruit.vercel.app/image/frutas.jpg</image:loc>
+      <image:title>Sinfonía De Sabores Fruit - Cremas y helados artesanales</image:title>
+    </image:image>
+  </url>
+
+  <!-- Sección Productos -->
+  <url>
+    <loc>https://sinfonia-de-sabores-fruit.vercel.app/#Productos</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://sinfonia-de-sabores-fruit.vercel.app/images/arequipe.jpeg</image:loc>
+      <image:title>Crema artesanal de Arequipe</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sinfonia-de-sabores-fruit.vercel.app/images/coco.jpeg</image:loc>
+      <image:title>Crema artesanal de Coco</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sinfonia-de-sabores-fruit.vercel.app/images/fresa.jpeg</image:loc>
+      <image:title>Crema artesanal de Fresa</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sinfonia-de-sabores-fruit.vercel.app/images/guanabana.jpeg</image:loc>
+      <image:title>Crema artesanal de Guanábana</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sinfonia-de-sabores-fruit.vercel.app/images/lulo.jpeg</image:loc>
+      <image:title>Crema artesanal de Lulo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sinfonia-de-sabores-fruit.vercel.app/images/mangobiche.jpeg</image:loc>
+      <image:title>Crema artesanal de Mango Biche</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sinfonia-de-sabores-fruit.vercel.app/images/maracumango.jpeg</image:loc>
+      <image:title>Crema artesanal de Maracumango</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sinfonia-de-sabores-fruit.vercel.app/images/maracuya.jpeg</image:loc>
+      <image:title>Crema artesanal de Maracuyá</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sinfonia-de-sabores-fruit.vercel.app/images/queso.jpeg</image:loc>
+      <image:title>Crema artesanal de Queso</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sinfonia-de-sabores-fruit.vercel.app/images/salpicon.jpeg</image:loc>
+      <image:title>Crema artesanal de Salpicón</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sinfonia-de-sabores-fruit.vercel.app/images/aguacate.jpeg</image:loc>
+      <image:title>Crema artesanal de Aguacate</image:title>
+    </image:image>
+  </url>
+
+  <!-- Sección Galería -->
+  <url>
+    <loc>https://sinfonia-de-sabores-fruit.vercel.app/#Galeria</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Sección Nosotros -->
+  <url>
+    <loc>https://sinfonia-de-sabores-fruit.vercel.app/#Sobre-Sinfonia</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Sección Contacto -->
+  <url>
+    <loc>https://sinfonia-de-sabores-fruit.vercel.app/#Contacto</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

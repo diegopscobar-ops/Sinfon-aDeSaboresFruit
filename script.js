@@ -300,3 +300,4 @@ const liquidObserver = new IntersectionObserver(entries => {
 
 const liquidGrid = document.querySelector('#Estadisticas .stats-grid');
 if (liquidGrid) liquidObserver.observe(liquidGrid);
+z
